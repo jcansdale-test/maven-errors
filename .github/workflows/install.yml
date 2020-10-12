@@ -15,12 +15,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        token: [$_GITHUB_TOKEN, bad]
+        token: [$GITHUB_TOKEN, bad]
 
     runs-on: ubuntu-latest
 
     env:
-      _GITHUB_TOKEN: ${{ github.token }}
+      GITHUB_TOKEN: ${{ github.token }}
     
     steps:
       - uses: actions/checkout@v2
