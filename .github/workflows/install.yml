@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         token: [$GITHUB_TOKEN, bad]
-        repositoey: [github-packages-examples/maven-publish, github/github, desktop/desktop]
+        repository: [github-packages-examples/maven-publish, github/github, desktop/desktop]
 
     runs-on: ubuntu-latest
 
